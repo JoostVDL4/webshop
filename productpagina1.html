@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/shopping.css">
+    <script src="js/shopping.js" defer></script>
+    <script src="https://kit.fontawesome.com/6f8e75a8fb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <section id="js--checkoutWindow" class="checkout a-popup">
+        <ul class="checkout__list">
+            <li class="checkout__listItem">
+                <img src="img/buzz.webp" alt="Buzz sieraad" class="checkout__image">
+                <p class="checkout__title">Buzz Lightyear</p>
+                <p id="js--amount-buzz"class="checkout__amount"></p>
+                <p id="js--total-buzz">0</p>
+            </li>
+            <li class="checkout__listItem">
+                <img src="img/ironman.webp" alt="Iron man sieraad" class="checkout__image">
+
+                <p class="checkout__title">Iron Man</p>
+                <p id="js--amount-ironman" class="checkout__amount"></p>
+                <p id="js--total-iron">0</p>
+            </li>
+            <li class="checkout__listItem">
+                <img src="img/c3po.webp" alt="c3po sieraad" class="checkout__image">
+                <p class="checkout__title">C3PO</p>
+                <p id="js--amount-c3po"class="checkout__amount"></p>
+                <p id="js--total-c3po">0</p>
+            </li>
+        </ul>
+    </section>
+    <article class="modal a-popup" id="js--shoppingModal">
+        &#10003;Added to Cart
+    </article>
+    <button id="js--checkoutButton" class="shoppingCart">
+        <i id="js--shoppingLogo" class="fa-solid fa-cart-shopping"></i>
+        <i id ="js--shoppingBack" class="fa-solid fa-arrow-left"></i>
+        <div class="shoppingCart__message">0</div>
+    </button>
+    <main>
+        <section class="header">
+            <header>
+                
+                <nav>
+                    <ul>
+                        <li  class="companyName"><a href="index.html">Home</a></li>
+                        <li class="headerPP1"> <a href="productpagina1.html">ProductPagina1</a></li>
+                        <li class="headerPP2"><a href="productpagina2.html">ProductPagina2</a></li>
+                    </ul>
+                </nav>
+                <div class="collectionLinks">
+                    
+                </div>
+    
+    
+            </header>
+        </section>
+        <ul class="games">
+            <li class="games__game a-popup">
+                <figure class="games__figure"><img src="img/buzz.webp" alt="Buzz" class="games__img">
+                </figure>
+                <section class="games__body">
+                    <h2 id="js--buzz-price" class="games__h2"></h2>
+                    <h3 class="games__h3">Buzz</h3>
+                    <div class="games__stars">★★★★★</div>
+                    <button data-product="buzz" class="games__button">Add to Cart</button>
+                </section>
+
+            </li>
+            <li class="games__game a-popup">
+                <figure class="games__figure"><img src="img/ironman.webp" alt="Iron Man sieraad" class="games__img">
+                </figure>
+                <section class="games__body">
+                    <s>€59</s>
+                    <h2 id="js--iron-price" class="games__h2">€39</h2>
+                    <h3 class="games__h3">Iron Man - Marvel</h3>
+                    <div class="games__stars">★★★★</div>
+                    <button data-product="ironman" class="games__button">Add to Cart</button>
+                </section>
+
+            </li>
+            <li class="games__game games__game--third a-popup">
+                <figure class="games__figure"><img src="img/c3po.webp" alt="c3po sieraar" class="games__img">
+                </figure>
+                <section class="games__body">
+                    <h2 id="js--c3po-price" class="games__h2">€29</h2>
+                    <h3 class="games__h3">C3PO</h3>
+                    <div class="games__stars">★★</div>
+                    <button data-product="C3PO" class="games__button">Add to Cart</button>
+                </section>
+                
+            </li>
+    
+
+        </ul>
+    </main>
+</body>
+
+</html>
