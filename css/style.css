@@ -37,7 +37,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right:100rem;
+    color: #9b9b9b;
+    margin-right:95rem;
+    text-decoration: none;
+}
+
+.headerPP1{
+    color: #9b9b9b;
+    letter-spacing: 0.3rem;
+    text-decoration: none;
+}
+
+.headerPP2{
+    color: #9b9b9b;
+    letter-spacing: 0.3rem;
     text-decoration: none;
 }
 
@@ -71,7 +84,7 @@ nav > ul{
 
 .sloganTitle {
     font-size: 3rem;
-    margin-left:6rem;
+    margin-left:7rem;
     letter-spacing: 0.3rem;
 }
 
@@ -139,6 +152,7 @@ nav > ul{
     padding-left: 20rem;
     padding-right: 20rem;
 
+
 }
 
 .recommendation {
@@ -182,12 +196,38 @@ nav > ul{
 .allItemsButton{
    display: flex;
    justify-content: center;
-   border:none;
+   align-items: center;
+   font-size:2rem;
    color:black;
+   background-color:#F4E4DC;
    text-align: center;
-   margin-left: 71rem;
    cursor: pointer;
-   text-decoration: none !important;
+   text-decoration: none;
+   height:10rem;
+   margin-top:4rem;
+}
+
+.tutorial{
+    margin-top:20rem;
+    width:100%;
+    height:40vh;
+    margin-bottom:2rem;
+    background-color: #F4E4DC;
+}
+
+.tutSteps{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.steps{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
 
 .footer{
