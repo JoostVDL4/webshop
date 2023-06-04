@@ -11,7 +11,13 @@ html {
 
 }
 
-main {}
+main {
+    width: 100%;
+    height: 100%;
+}
+
+
+
 
 
 body {
@@ -20,54 +26,63 @@ body {
 
 }
 
-.header  { 
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 95rem;
+    width:20rem;
+    height:20rem;
+}
+
+.header {
     background: #f4e4dc;
     padding: 2rem;
     display: flex;
-    list-style:none;
-    height:15vh;
-    width:100%;
+    list-style: none;
+    height: 15vh;
+    width: 100%;
     align-items: center;
     justify-content: center;
-    gap:2rem;
-    
+    gap: 2rem;
+
 }
 
-.companyName{
+.companyName {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #9b9b9b;
-    margin-right:95rem;
+    margin-right: 95rem;
     text-decoration: none;
 }
 
-.headerPP1{
+.headerPP1 {
     color: #9b9b9b;
     letter-spacing: 0.3rem;
     text-decoration: none;
 }
 
-.headerPP2{
+.headerPP2 {
     color: #9b9b9b;
     letter-spacing: 0.3rem;
     text-decoration: none;
 }
 
-nav{
-    width:60vw;
-    height:100%;
-    margin:0 auto;
+nav {
+    width: 60vw;
+    height: 100%;
+    margin: 0 auto;
 }
 
-nav > ul{
-    display:flex;
-    list-style:none;
-    height:100%;
-    width:100%;
+nav>ul {
+    display: flex;
+    list-style: none;
+    height: 100%;
+    width: 100%;
     align-items: center;
     justify-content: space-evenly;
-    gap:2rem;    
+    gap: 2rem;
 }
 
 
@@ -83,8 +98,9 @@ nav > ul{
 }
 
 .sloganTitle {
-    font-size: 3rem;
-    margin-left:7rem;
+    font-size: 8rem;
+    font-weight:600;
+    margin-left: 7rem;
     letter-spacing: 0.3rem;
 }
 
@@ -93,8 +109,13 @@ nav > ul{
     margin-top: 7rem;
     margin-left: 7rem;
     border: none;
-    font-size: 2rem;
+    font-size: 5rem;
     cursor: pointer;
+    text-decoration: none;
+    display:flex;
+    justify-content: center;
+    color:black;
+    font-weight: 700;
 
 }
 
@@ -107,10 +128,11 @@ nav > ul{
 .sloganImage {
     height: 45rem;
     margin-left: 25rem;
-    width:auto;
+    width: auto;
     object-fit: contain;
     display: flex;
     justify-content: center;
+    border-radius:2rem;
 }
 
 
@@ -143,6 +165,8 @@ nav > ul{
 .welcomeImages {
     background-color: #F4E4DC;
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -156,7 +180,9 @@ nav > ul{
 }
 
 .recommendation {
-    height: 60vh;
+    margin-top:2rem;
+    height: 50rem;
+    background-color: white;
 }
 
 .recommendationTitle {
@@ -182,60 +208,184 @@ nav > ul{
 }
 
 
-.recommendedImages{
-    display:flex;
-    flex-direction:row;
+.recommendedImages {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
 .recommendedItem {
-    padding:2rem;
+    padding: 2rem;
 }
 
-.allItemsButton{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-size:2rem;
-   color:black;
-   background-color:#F4E4DC;
-   text-align: center;
-   cursor: pointer;
-   text-decoration: none;
-   height:10rem;
-   margin-top:4rem;
-}
-
-.tutorial{
-    margin-top:20rem;
-    width:100%;
-    height:40vh;
-    margin-bottom:2rem;
+.allItemsButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: black;
     background-color: #F4E4DC;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    height: 10rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
 }
 
-.tutSteps{
-    display:grid;
+.tutorial {
+    height:80vh;
+    background: #F4E4DC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.tutorialTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:30rem;
+    font-size: 3rem;
+    font-family: Montserrat, 'MS Sans Serif', Geneva, sans-serif;
+    color: #9b9b9b;
+    letter-spacing: 0.6rem;
+}
+
+
+.tutSteps {
+
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    gap:40rem;
+    list-style:none;
+
+
 
 }
 
-.steps{
+
+.reviewSection{
+    margin-top:2rem;
+    background:white;
     display:flex;
-    flex-direction:row;
+    height:auto;
+    padding:4rem;
+    align-items: center;
+}
+
+.arrow{
+    width:10%;
+    background:white;
+    font-size:300%;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    display:flex;
     justify-content: center;
     align-items: center;
     
-    
 }
 
-.footer{
+.reviews{
     display:flex;
-    height:30vh;
+    justify-content:center;
+    align-items: center;
+    height:100%;
+    gap:2rem;
+    width:80%;
+    flex-wrap:wrap;
+}
+
+.review{
+    
+    width:30rem;
+    min-height: 20rem;
+    background:darkred;
+    list-style:none;
+    padding: 4rem;
+    border-radius:0.5rem;
+    background:white;
+    box-shadow:0 1rem 1rem 0 rgba(0,0,0,0.2),
+    inset 0 -1rem 1rem -1rem rgba(0,0,0,0.1);
+    position:relative;
+    animation-name: fadeIn;
+    animation-duration: 0.8s;
+}
+
+.review:nth-of-type(4), .review:nth-of-type(5), .review:nth-of-type(6){
+    display:none;
+}
+
+.reviewImage{
+    position:absolute;
+    top:0;
+    left:40%;
+    width:7rem;
+    height:7rem;
+}
+
+
+.quote{
+    font-size:500%;
+    position:absolute;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+    line-height:0.5;
+}
+.stars{
+    margin-top:4rem;
+    color:gold;
+}
+
+.review p{
+    font-size:65%;
+    font-style: italic;
+    padding-bottom: 2rem;
+    border-bottom: 0.5rem solid rgba(0,0,0,0.2);
+}
+
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        filter:blur(10px);
+    }
+    to{
+        opacity:1;
+        filter:blur(0);
+    }
+}
+
+@media screen and (max-width: 50rem) {
+    .arrow{
+        display:none;
+    }
+
+    .reviews{
+        width:100%;
+    }
+}
+
+
+
+
+
+.footer {
+    margin-top:2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
     background-color: #F4E4DC;
-    padding-top:3rem;
-    padding-left:10rem;
+    padding-top: 3rem;
+   
+}
+
+.infoTitle {
     font-family: Montserrat;
     font-weight: 700;
     font-style: normal;
@@ -245,10 +395,29 @@ nav > ul{
     text-decoration: underline;
 }
 
-.infoTitle{
-    
+.infoText{
+    font-size:1.5rem;
+    margin-top:2rem;
+    text-transform: none;
+    text-decoration:solid;
 }
 
-.shopTitle{
-    padding-left:100rem;
+.shopTitle {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    padding-bottom: 0.4rem;
+    text-decoration: underline;
+}
+
+.shopText{
+    display:block;
+    font-size:2rem;
+    margin-top:2rem;
+    text-transform: none;
+    text-decoration:solid;
+    text-decoration: none;
+    color:black;
 }

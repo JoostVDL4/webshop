@@ -6,15 +6,15 @@ let modalIsOpen = false;
 let buzz = 0;
 let iron = 0;
 let c3po = 0;
-var buzzPrice = 49;
+var buzzPrice = 5;
 var buzzValue = document.getElementById("js--buzz-price").innerHTML ="€" + buzzPrice;
 var buzzTotal = document.getElementById("js--total-buzz");
 
-var ironPrice = 39;
+var ironPrice = 5;
 var ironValue = document.getElementById("js--iron-price").innerHTML ="€" + ironPrice;
 var ironTotal = document.getElementById("js--total-iron");
 
-var c3poPrice = 29;
+var c3poPrice = 6;
 var c3poValue = document.getElementById("js--c3po-price").innerHTML ="€" + c3poPrice;
 var c3poTotal = document.getElementById("js--total-c3po");
 
