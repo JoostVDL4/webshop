@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Laag_1" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272.49 46.01">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        fill: #82368c;
+        stroke-width: 4px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #1d1d1b;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-3 {
+        fill: #fcea10;
+        font-family: Broadway, Broadway;
+        font-size: 25.16px;
+        stroke-width: .25px;
+      }
+
+      .cls-7 {
+        letter-spacing: -.03em;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" x="2" y="2" width="268.49" height="42.01"/>
+  <text id="Movie" class="cls-3" transform="translate(32.13 30.77) scale(.71 1)"><tspan x="0" y="0">Ult</tspan><tspan class="cls-7" x="38.92" y="0">r</tspan><tspan class="cls-1" x="51.61" y="0">a M</tspan><tspan class="cls-5" x="99.48" y="0">o</tspan><tspan x="113.62" y="0">vie </tspan><tspan class="cls-4" x="160.08" y="0">S</tspan><tspan x="174.55" y="0">t</tspan><tspan class="cls-6" x="185.44" y="0">r</tspan><tspan x="197.92" y="0">eaming</tspan></text>
+</svg>

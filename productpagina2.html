@@ -5,44 +5,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MovieFilter</title>
     <script src="js/filter.js" defer></script>
+    <script src="js/products.js" defer></script>
     <link rel="stylesheet" href="css/filter.css">
 </head>
 
+
 <body>
-    <section class="header">
-        <header>
-            <nav>
-                <ul>
-                    <img class="logo" src="img/logowebshop1.svg">
-                    <li> <a class="headerPP1" href="productpagina1.html">ProductPagina1</a></li>
-                    <li> <a class="headerPP2" href="productpagina2.html">ProductPagina2</a></li>
-                </ul>
-            </nav>
-            <div class="collectionLinks">
+    
+    
+
+    <main>
+        <section class="header">
+            <header>
+                <nav>
+                    <ul>
+                        <a href="index.html">
+                            <img class="logo" href="index.html" src="img/logowebshop2.svg">
+                        
+                        <li> <a class="headerPP1" href="productpagina1.html">ProductPagina1</a></li>
+                        <li> <a class="headerPP2" href="productpagina2.html">ProductPagina2</a></li>
+                    </ul>
+                </nav>
+    
+                </div>
+    
+    
+            </header>
+        
+      
+        </section>
+        <section class="inputs">
+            <div>
+                <input id="checkbox-crime" type="checkbox" class="filter">
+                <label for="checkbox-crime" class="label">Crime</label>
+            </div>
+            <div>
+                <input id="checkbox-superhero" type="checkbox" class="filter">
+                <label for="checkbox-superhero" class="label">Superhero</label>
+            </div>
+            <div>
+                <input id="checkbox-fantasy" type="checkbox" class="filter">
+                <label for="checkbox-fantasy" class="label">Fantasy</label>
+
+            </div>
+            <div>
+                <input id="checkbox-war" type="checkbox" class="filter">
+                <label for="checkbox-war" class="label">War</label>
 
             </div>
 
-
-        </header>
-    </section>
-    <main>
-
-        
-        
-        <section class="inputs">
             <div>
                 <input id="checkbox-action" type="checkbox" class="filter">
                 <label for="checkbox-action" class="label">Action</label>
-            </div>
-            <div>
-                <input id="checkbox-strategy" type="checkbox" class="filter">
-                <label for="checkbox-strategy" class="label">Strategy</label>
-            </div>
-            <div>
-                <input id="checkbox-arpg" type="checkbox" class="filter">
-                <label for="checkbox-arpg" class="label">Arpg</label>
 
             </div>
 
@@ -51,24 +67,25 @@
 
 
         </section>
-        <ul class="games">
-            <li class="game" data-category="action"><img src="img/filter/residentevil4.webp" alt="re4"></li>
-            <li class="game" data-category="action"><img src="img/filter/starwars.webp" alt="starwars"></li>
-            <li class="game" data-category="strategy"><img src="img/filter/companyofheroes.webp" alt="company of heroes"></li>
-            <li class="game" data-category="arpg"><img src="img/filter/diablo4.webp" alt="streetfighter"></li>
-            <li class="game" data-category="action"><img src="img/filter/residentevil4.webp" alt="re4"></li>
-            <li class="game" data-category="action"><img src="img/filter/starwars.webp" alt="starwars"></li>
-            <li class="game" data-category="strategy"><img src="img/filter/companyofheroes.webp" alt="company of heroes"></li>
-            <li class="game" data-category="arpg"><img src="img/filter/diablo4.webp" alt="streetfighter"></li>
-            <li class="game" data-category="action"><img src="img/filter/residentevil4.webp" alt="re4"></li>
-            <li class="game" data-category="action"><img src="img/filter/starwars.webp" alt="starwars"></li>
-            <li class="game" data-category="strategy"><img src="img/filter/companyofheroes.webp" alt="company of heroes"></li>
-            <li class="game" data-category="arpg"><img src="img/filter/diablo4.webp" alt="streetfighter"></li>
-            <li class="game" data-category="action"><img src="img/filter/residentevil4.webp" alt="re4"></li>
-            <li class="game" data-category="action"><img src="img/filter/starwars.webp" alt="starwars"></li>
-            <li class="game" data-category="strategy"><img src="img/filter/companyofheroes.webp" alt="company of heroes"></li>
+        <ul id="js--products" class="games">
 
         </ul>
+        <section class="footer">
+            <article class="information">
+                <h1 class="infoTitle">About Me</h1>
+                <p class="infoText">I am Joost, and this webshop is made for a school project!</p>
+            </article>
+
+
+
+            <article class="shopInfo">
+                <h1 class="shopTitle">Shop</h1>
+                <a class="shopTextOne" href="productpagina1.html">ProductPagina1</a>
+                <a class="shopTextSecond" href="productpagina2.html">ProductPagina2</a>
+            </article>
+
+
+        </section>
     </main>
 </body>
 

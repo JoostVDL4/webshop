@@ -1,14 +1,14 @@
-* {
-    margin: 0;
-    padding: 0;
+*, *::before, *::after{
+    margin:0;
+    padding:0;
     box-sizing: border-box;
+
 }
 
 
 
 html {
     font-size: 62.5%;
-
 }
 
 main {
@@ -26,13 +26,13 @@ body {
 
 }
 
-.logo{
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 95rem;
-    width:20rem;
-    height:20rem;
+    margin-right: 75rem;  
+    width: 30rem;
+    height: 30rem;
 }
 
 .header {
@@ -40,7 +40,7 @@ body {
     padding: 2rem;
     display: flex;
     list-style: none;
-    height: 15vh;
+    height: 15rem;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -48,14 +48,7 @@ body {
 
 }
 
-.companyName {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #9b9b9b;
-    margin-right: 95rem;
-    text-decoration: none;
-}
+
 
 .headerPP1 {
     color: #9b9b9b;
@@ -94,14 +87,15 @@ nav>ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #FFEFBA;
+    background: #FFF;
 }
 
 .sloganTitle {
     font-size: 8rem;
-    font-weight:600;
     margin-left: 7rem;
     letter-spacing: 0.3rem;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    color: #9b9b9b;
 }
 
 .sloganButton {
@@ -112,9 +106,9 @@ nav>ul {
     font-size: 5rem;
     cursor: pointer;
     text-decoration: none;
-    display:flex;
+    display: flex;
     justify-content: center;
-    color:black;
+    color: black;
     font-weight: 700;
 
 }
@@ -132,55 +126,74 @@ nav>ul {
     object-fit: contain;
     display: flex;
     justify-content: center;
-    border-radius:2rem;
+    border-radius: 2rem;
 }
 
 
 .welcome {
-    height: 20vh;
-    width: 100%;
+    height: 50rem;
     background-color: #F4E4DC;
-
-}
-
-
-.welcomeTitle {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.6rem;
-    font-family: Montserrat, 'MS Sans Serif', Geneva, sans-serif;
 }
 
-.welcomeText {
-    margin-top: 2rem;
+.welcomeContent {
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 1.4rem;
-    color: #747070;
 }
 
-
-.welcomeImages {
-    background-color: #F4E4DC;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-}
 
 .welcomeImage {
-    margin-top: 1.5rem;
+    margin-left:7rem;
     display: flex;
-    padding-left: 20rem;
-    padding-right: 20rem;
+    left:0;
+    margin-right: 35rem;
+    height: 45rem;
+    width: auto;
+    border-radius: 0.5rem;
+}
 
 
+.welcomeText {
+    margin-left: auto;
+    margin-bottom:20rem;
+    margin-top:2rem;
+    
+
+}
+
+.welcomeTitle{
+    margin-top:2rem;
+    font-size:3rem;
+    letter-spacing: 0.3rem;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    color: #9b9b9b;
+}
+
+.welcomeDesc{
+    color: #000000;
+    font-weight: 600;
+    font-style: normal;
+   
+    font-size:7rem;
+    margin-top:2rem;
+    margin-bottom:5rem;
+}
+
+
+.welcomeButton{
+    background-color: lightgreen;
+    border: none;
+    font-size: 4.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
 }
 
 .recommendation {
-    margin-top:2rem;
+    margin-top: 2rem;
     height: 50rem;
     background-color: white;
 }
@@ -213,10 +226,14 @@ nav>ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
 }
 
 .recommendedItem {
     padding: 2rem;
+    height:45rem;
+    width:30rem;
+   
 }
 
 .allItemsButton {
@@ -236,7 +253,8 @@ nav>ul {
 }
 
 .tutorial {
-    height:80vh;
+    margin-top:3rem;
+    height: 80vh;
     background: #F4E4DC;
     display: flex;
     justify-content: center;
@@ -244,11 +262,11 @@ nav>ul {
     width: 100%;
 }
 
-.tutorialTitle{
+.tutorialTitle {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right:30rem;
+    margin-right: 30rem;
     font-size: 3rem;
     font-family: Montserrat, 'MS Sans Serif', Geneva, sans-serif;
     color: #9b9b9b;
@@ -260,114 +278,140 @@ nav>ul {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap:40rem;
-    list-style:none;
+    gap: 40rem;
+    list-style: none;
 
 
 
 }
 
 
-.reviewSection{
+.productHighlight{
     margin-top:2rem;
-    background:white;
-    display:flex;
-    height:auto;
-    padding:4rem;
+    height: 50rem;
+    background-color: #F4E4DC;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.arrow{
-    width:10%;
-    background:white;
-    font-size:300%;
-    outline:none;
-    border:none;
-    cursor:pointer;
+
+
+
+.reviewSection {
+    margin-top: 2rem;
+    background: white;
+    display: flex;
+    height: auto;
+    padding: 4rem;
+    align-items: center;
+}
+
+.arrow {
+    width: 10%;
+    background: white;
+    font-size: 300%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.reviewsTitle{
     display:flex;
     justify-content: center;
     align-items: center;
-    
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    color: #9b9b9b;
 }
 
-.reviews{
-    display:flex;
-    justify-content:center;
+.reviews {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    height:100%;
-    gap:2rem;
-    width:80%;
-    flex-wrap:wrap;
+    height: 100%;
+    gap: 2rem;
+    width: 80%;
+    flex-wrap: wrap;
 }
 
-.review{
-    
-    width:30rem;
+.review {
+
+    width: 30rem;
     min-height: 20rem;
-    background:darkred;
-    list-style:none;
+    background: darkred;
+    list-style: none;
     padding: 4rem;
-    border-radius:0.5rem;
-    background:white;
-    box-shadow:0 1rem 1rem 0 rgba(0,0,0,0.2),
-    inset 0 -1rem 1rem -1rem rgba(0,0,0,0.1);
-    position:relative;
+    border-radius: 0.5rem;
+    background: white;
+    box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.2),
+        inset 0 -1rem 1rem -1rem rgba(0, 0, 0, 0.1);
+    position: relative;
     animation-name: fadeIn;
     animation-duration: 0.8s;
 }
 
-.review:nth-of-type(4), .review:nth-of-type(5), .review:nth-of-type(6){
-    display:none;
+.review:nth-of-type(4),
+.review:nth-of-type(5),
+.review:nth-of-type(6) {
+    display: none;
 }
 
-.reviewImage{
-    position:absolute;
-    top:0;
-    left:40%;
-    width:7rem;
-    height:7rem;
+.reviewImage {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 7rem;
+    height: 7rem;
 }
 
 
-.quote{
-    font-size:500%;
-    position:absolute;
-    top:0;
-    left:50%;
+.quote {
+    font-size: 500%;
+    position: absolute;
+    top: 0;
+    left: 50%;
     transform: translateX(-50%);
-    line-height:0.5;
-}
-.stars{
-    margin-top:4rem;
-    color:gold;
+    line-height: 0.5;
 }
 
-.review p{
-    font-size:65%;
+.stars {
+    margin-top: 4rem;
+    color: gold;
+}
+
+.review p {
+    font-size: 65%;
     font-style: italic;
     padding-bottom: 2rem;
-    border-bottom: 0.5rem solid rgba(0,0,0,0.2);
+    border-bottom: 0.5rem solid rgba(0, 0, 0, 0.2);
 }
 
 
-@keyframes fadeIn{
-    from{
-        opacity:0;
-        filter:blur(10px);
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        filter: blur(10px);
     }
-    to{
-        opacity:1;
-        filter:blur(0);
+
+    to {
+        opacity: 1;
+        filter: blur(0);
     }
 }
 
 @media screen and (max-width: 50rem) {
-    .arrow{
-        display:none;
+    .arrow {
+        display: none;
     }
 
-    .reviews{
-        width:100%;
+    .reviews {
+        width: 100%;
     }
 }
 
@@ -376,13 +420,13 @@ nav>ul {
 
 
 .footer {
-    margin-top:2rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: space-between;
     height: 20vh;
     background-color: #F4E4DC;
     padding-top: 3rem;
-   
+
 }
 
 .infoTitle {
@@ -395,11 +439,11 @@ nav>ul {
     text-decoration: underline;
 }
 
-.infoText{
-    font-size:1.5rem;
-    margin-top:2rem;
+.infoText {
+    font-size: 1.5rem;
+    margin-top: 2rem;
     text-transform: none;
-    text-decoration:solid;
+    text-decoration: solid;
 }
 
 .shopTitle {
@@ -412,12 +456,12 @@ nav>ul {
     text-decoration: underline;
 }
 
-.shopText{
-    display:block;
-    font-size:2rem;
-    margin-top:2rem;
+.shopText {
+    display: block;
+    font-size: 2rem;
+    margin-top: 2rem;
     text-transform: none;
-    text-decoration:solid;
+    text-decoration: solid;
     text-decoration: none;
-    color:black;
+    color: black;
 }

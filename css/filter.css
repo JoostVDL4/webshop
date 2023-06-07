@@ -6,16 +6,17 @@
 
 html {
     font-size: 62.5%;
+    zoom:90%;
 }
 
 
-.logo{
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 95rem;
-    width:20rem;
-    height:20rem;
+    margin-right: 80rem;  
+    width: 30rem;
+    height: 30rem;
 }
 
 .header {
@@ -23,13 +24,18 @@ html {
     padding: 2rem;
     display: flex;
     list-style: none;
-    height: 15vh;
+    height: 15rem;
     width: 100%;
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    top:0;
+    margin-bottom:2rem;
+   
 
 }
+
+
 
 .headerPP1 {
     color: #9b9b9b;
@@ -41,6 +47,8 @@ html {
     color: #9b9b9b;
     letter-spacing: 0.3rem;
     text-decoration: none;
+    color:red;
+    text-decoration: underline;
 }
 
 nav {
@@ -64,7 +72,6 @@ body {
     font-size: 2rem;
     background: #eee;
     font-family: sans-serif;
-    padding: 8rem;
     overflow:hidden;
 }
 
@@ -96,7 +103,6 @@ body::after{
 }
 main{
     width:100%;
-
     opacity:0;
     animation-fill-mode: forwards;
     animation-name: popup;
@@ -155,7 +161,7 @@ filter:hover{
     width:100%;
     display:flex;
     flex-wrap:wrap;
-    gap: 2rem;
+    gap: 0.5rem;
     align-items: center;
 }
 
@@ -198,4 +204,61 @@ filter:hover{
         opacity:1;
     }
 
+}
+
+.footer {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+    background-color: #F4E4DC;
+    padding-top: 3rem;
+
+}
+
+.infoTitle {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    padding-bottom: 0.4rem;
+    text-decoration: underline;
+}
+
+.infoText {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    text-transform: none;
+    text-decoration: solid;
+}
+
+.shopTitle {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    padding-bottom: 0.4rem;
+    text-decoration: underline;
+}
+
+.shopTextOne {
+    display: block;
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-transform: none;
+    text-decoration: solid;
+    text-decoration: none;
+    color: black;
+}
+
+.shopTextSecond {
+    display: block;
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-transform: none;
+    text-decoration: solid;
+    text-decoration: none;
+    color: red;
 }
