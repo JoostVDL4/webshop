@@ -7,8 +7,8 @@ let actionFilter = document.getElementById("checkbox-action")
 window.scrollTo(0, 0);
 
 setInterval(function(){
-    document.getElementsByTagName("body")[0].style.overflow = "auto";
-},1500);
+    
+});
 let filters= document.getElementsByClassName("filter");
 for(let i=0; i < filters.length; i++){
     filters[i].checked = true;
@@ -16,7 +16,7 @@ for(let i=0; i < filters.length; i++){
 
 //action filter
 
-console.log(crimeFilter);
+
 crimeFilter.onchange = function(){
   
     if(crimeFilter.checked === true){
