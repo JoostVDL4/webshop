@@ -4,6 +4,9 @@ let superheroFilter =document.getElementById("checkbox-superhero");
 let fantasyFilter = document.getElementById("checkbox-fantasy");
 let warFilter = document.getElementById("checkbox-war");
 let actionFilter = document.getElementById("checkbox-action")
+
+
+
 window.scrollTo(0, 0);
 
 setInterval(function(){
@@ -120,3 +123,6 @@ actionFilter.onchange = function(){
         }
     }
 }
+
+
+      
