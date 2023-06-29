@@ -109,6 +109,67 @@ body {
     object-fit: contain;
 }
 
+.footer {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 30vh;
+    background-color: #F4E4DC;
+    padding-right:2rem;
+    padding-left:2rem;
+  
+
+}
+
+.infoTitle {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    padding-bottom: 0.4rem;
+    text-decoration: underline;
+}
+
+.infoText {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    text-transform: none;
+    text-decoration: solid;
+}
+
+.shopTitle {
+
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    padding-bottom: 0.4rem;
+    text-decoration: underline;
+}
+
+.shopTextOne{
+    color: red;
+    display: block;
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-transform: none;
+    text-decoration: solid;
+    text-decoration: none;
+
+}
+
+.shopTextSecond{
+    display: block;
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-transform: none;
+    text-decoration: solid;
+    text-decoration: none;
+    color: black;
+}
+
 
 
 

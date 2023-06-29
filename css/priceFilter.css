@@ -6,33 +6,28 @@
 
 html {
     font-size: 62.5%;
+    zoom:90%;
 }
 
 
 .logo {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-right: 80rem;  
-    width: 30rem;
+    width: 20vw;
     height: 30rem;
+    margin-right: auto;
 }
 
 .header {
-    
     background: #f4e4dc;
     padding: 2rem;
     display: flex;
     list-style: none;
-    height: 15rem;
-    width: 100%;
+    height: 10vh;
+    width: 110vw;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    top:0;
-    margin-bottom:2rem;
-   
-
 }
 
 
@@ -43,22 +38,23 @@ html {
     text-decoration: none;
     color:red;
     text-decoration: underline;
+
 }
 
 .headerPP2 {
     color: #9b9b9b;
     letter-spacing: 0.3rem;
     text-decoration: none;
-  
+
 }
 
 nav {
-    width: 60vw;
+    width: 100vw;
     height: 100%;
     margin: 0 auto;
 }
 
-nav>ul {
+nav > ul {
     display: flex;
     list-style: none;
     height: 100%;
@@ -150,14 +146,15 @@ body {
 
 
 .footer {
-    margin-top: 5rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: space-between;
     height: 20vh;
     background-color: #F4E4DC;
-    padding-top: 3rem;
-    width:100%;
-    padding:2rem;
+    padding-right:2rem;
+    padding-left:2rem;
+  
+
 }
 
 .infoTitle {
@@ -178,6 +175,7 @@ body {
 }
 
 .shopTitle {
+
     font-family: Montserrat;
     font-weight: 700;
     font-style: normal;
@@ -187,7 +185,18 @@ body {
     text-decoration: underline;
 }
 
-.shopText {
+.shopTextOne{
+    color: red;
+    display: block;
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-transform: none;
+    text-decoration: solid;
+    text-decoration: none;
+
+}
+
+.shopTextSecond{
     display: block;
     font-size: 2rem;
     margin-top: 2rem;

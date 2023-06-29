@@ -14,6 +14,9 @@ const htmlCode = `
   <li class="game" data-category="superhero" data-price="20"> <img src="img/products/spidermanITS.webp" alt="Spider-man: Into The Spiderverse"></li>
   <li class="game" data-category="superhero" data-price="25"> <img src="img/products/theBatman.webp" alt="The Batman (2022)"></li>
   <li class="game" data-category="fantasy" data-price="30"> <img src="img/products/lordoftherings.webp" alt="Lord Of The Rings: Return Of The King"></li>
+  <li class="game" data-category="fantasy" data-price="12"> <img src="img/products/starwarsep5.webp" alt="Star Wars Episode 5: Empire Strikes Back"></li>
+  <li class="game" data-category="war" data-price="18"> <img src="img/products/savingprivateryan.webp" alt="Saving Private Ryan"></li>
+  <li class="game" data-category="action" data-price="15"> <img src="img/products/johnwick3.webp" alt="John Wick 3"></li>
 `;
 
 const htmlProducts = document.getElementById('js--products');

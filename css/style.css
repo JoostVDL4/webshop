@@ -22,17 +22,17 @@ main {
 body {
     font-family: sans-serif;
     font-size: 1.6rem;
-    width:100vw
+    width:100%;
+
 
 }
 
 .logo {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-right: 75rem;  
-    width: 30rem;
+    width: 20vw;
     height: 30rem;
+    margin-right: auto;
 }
 
 .header {
@@ -45,7 +45,6 @@ body {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-
 }
 
 
@@ -54,21 +53,23 @@ body {
     color: #9b9b9b;
     letter-spacing: 0.3rem;
     text-decoration: none;
+
 }
 
 .headerPP2 {
     color: #9b9b9b;
     letter-spacing: 0.3rem;
     text-decoration: none;
+
 }
 
 nav {
-    width: 60vw;
+    width: 100vw;
     height: 100%;
     margin: 0 auto;
 }
 
-nav>ul {
+nav > ul {
     display: flex;
     list-style: none;
     height: 100%;
@@ -89,6 +90,7 @@ nav>ul {
     justify-content: row;
     background: #FFF;
     overflow: auto;
+
 }
 
 .sloganTitle {
@@ -122,7 +124,7 @@ nav>ul {
 
 .sloganImage {
     height: 45rem;
-    margin-left: 25rem;
+    padding-left: 25rem;
     width: auto;
     object-fit: contain;
     display: flex;
@@ -142,10 +144,6 @@ nav>ul {
 .welcomeContent {
     display: flex;
     gap:30rem;
-    
-   
-    
-    
 }
 
 
@@ -307,6 +305,70 @@ nav>ul {
     align-items: center;
 }
 
+.productContent {
+    display: flex;
+    gap:30rem;
+}
+
+
+.productImage {
+    display: flex;
+    left:0;
+    height: 40rem;
+    width: auto;
+    border-radius: 0.5rem;
+    padding-left:4rem;
+    padding-top:2rem;
+    
+}
+
+
+.productText {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding:2rem
+}
+
+.productTitle{
+    font-size:3rem;
+    letter-spacing: 0.3rem;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    color: #9b9b9b;
+}
+
+.productDesc{
+    color: #000000;
+    font-weight: 600;
+    font-style: normal;
+    font-size:7rem;
+    padding:7rem;
+    
+   
+}
+
+
+.productInfo{
+    padding-top:2rem;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    color: #747070;
+    font-size: 2rem
+}
+    
+
+
+.productButton{
+    background-color: lightgreen;
+    border: none;
+    font-size: 4.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+
+}
+
+
 
 
 
@@ -416,15 +478,7 @@ nav>ul {
     }
 }
 
-@media screen and (max-width: 50rem) {
-    .arrow {
-        display: none;
-    }
 
-    .reviews {
-        width: 100%;
-    }
-}
 
 
 
@@ -480,40 +534,237 @@ nav>ul {
     color: black;
 }
 
-@media (min-width: 28.125rem) and (max-width: 48rem){
-
-    .body{
-        width:100%;
+@media (min-width: 28.125rem) and (max-width: 52rem){
+    .slogan {
+       
+        flex-wrap: wrap;
+        margin-bottom:3rem;
     }
 
-    .header {
-        background: #f4e4dc;
-        list-style: none;
-        height: 5rem;
-        width: 100vw
+
+    .sloganImage {
+        padding-left: 15rem;
+        height:30%;
+        width: auto;
+    }
     
+    .welcome {
+        background-color: #F4E4DC;
+        display: block;
+        justify-content: center;
+        flex-direction: none;
+        flex-wrap: wrap;
+        padding:0;
+        width:auto;
     }
-    .headerPP1 {
+    
+    .welcomeContent {
+      
+        padding-left:30rem;
+        flex-wrap:wrap-reverse;
         
     }
     
-    .headerPP2 {
-       
+    
+    .welcomeImage {
+        display: flex;
+        left:0;
+        height: 45rem;
+        width: auto;
+        border-radius: 0.5rem;
+        padding-left:2rem;
+        
     }
     
-    nav {
-       
+    
+    .welcomeText {
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        padding:2rem
     }
     
-    nav>ul {
+    .welcomeTitle{
+        font-size:3rem;
+        letter-spacing: 0.3rem;
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+        color: #9b9b9b;
+    }
+    
+    .welcomeDesc{
+        color: #000000;
+        font-weight: 600;
+        font-style: normal;
+        font-size:7rem;
+        padding:7rem;
+    }
+    
+    
+    .welcomeInfo{
+        padding-top:2rem;
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+        color: #747070;
+        font-size: 2rem
+    }
+        
+    
+    
+    .welcomeButton{
+        background-color: lightgreen;
+        border: none;
+        font-size: 4.5rem;
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+    
+    }
+
+    .recommendation {
+        flex-wrap: wrap;
+    }
+    
+    .recommendationTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        font-family: Montserrat, 'MS Sans Serif', Geneva, sans-serif;
+        color: #9b9b9b;
+        letter-spacing: 0.3rem;
+    }
+    
+    .recommendationText {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.6rem;
+        font-family: Montserrat, 'MS Sans Serif', Geneva, sans-serif;
+        color: #000000;
+        font-weight: 600;
+        font-style: normal;
+    }
+    
+    
+    .recommendedImages {
+        flex-wrap: wrap;
+        
+        
+    }
+    
+    .recommendedItem {
+        padding: 2rem;
+        height:20%;
+        width:15rem;
+       
+    }
+
+
+    .tutorial {
+        flex-wrap: wrap;
+    }
+    
+    .tutorialTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        font-size: 3rem;
+        font-family: Montserrat, 'MS Sans Serif', Geneva, sans-serif;
+        color: #9b9b9b;
+        letter-spacing: 0.6rem;
+    }
+    
+    .tutSteps {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
         list-style: none;
-        height: 100vw;
-        width: 100vw;
-      
+        gap: 15rem;
+    }
+    
+    .step {
+        margin-bottom: 0.5rem; 
+        font-size: 2.4rem;
+    }
+    
+
+    .productHighlight{
+        flex-wrap: wrap;
+        height:60%;
+    }
+    
+    .productContent {
+        flex-wrap: wrap;
+    }
+    
+    
+    .productImage {
+        display: flex;
+        left:0;
+        height: 40rem;
+        width: auto;
+        border-radius: 0.5rem;
+        padding-left:4rem;
+        padding-top:2rem;
+        
+    }
+    
+    
+    .productText {
+        flex-wrap: wrap;
+    }
+    
+    .productTitle{
+        font-size:3rem;
+        letter-spacing: 0.3rem;
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+        color: #9b9b9b;
+    }
+    
+    .productDesc{
+        color: #000000;
+        font-weight: 600;
+        font-style: normal;
+        font-size:3rem;
+        padding:2rem;
+       
        
     }
+    
+    
+    .productInfo{
+        padding-top:2rem;
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+        color: #747070;
+        font-size: 2rem
+        
+    }
+        
+    
+    
+    .productButton{
+        background-color: lightgreen;
+        border: none;
+        font-size: 4.5rem;
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+    
+    }
+    
+    
+    
+    
 }
 
-@media (min-width: 48.0625rem) {
-    
+@media screen and (max-width: 50rem) {
+    .arrow {
+        display: none;
+    }
+
+    .reviews {
+        width: 100%;
+    }
 }
