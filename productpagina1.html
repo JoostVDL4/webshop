@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MovieFilter</title>
-    <script src="js/filter.js" defer></script>
-    <script src="js/products.js" defer></script>
-    <link rel="stylesheet" href="css/filter.css">
+    <script src="js/priceFilter.js" defer></script>
+    <script src="js/productsPrice.js" defer></script>
+    <link rel="stylesheet" href="css/priceFilter.css">
 </head>
 
 
@@ -36,6 +36,20 @@
         
       
         </section>
+
+    
+        <div class="dropdown">
+            <button onclick="toggleDropdown()" class="dropbutton">Options</button>
+            <div id="dropdownOptions" class="dropdown-movies">
+              <a href="#" onclick="filterByPriceRange(5, 10)">5-10 Euro</a>
+              <a href="#" onclick="filterByPriceRange(10, 15)">10-15 Euro</a>
+              <a href="#" onclick="filterByPriceRange(20, 30)">20-30 Euro</a>
+              <a href="#" onclick="filterByPriceRange(0, 0)">All Movies</a>
+            </div>
+          </div>
+        
+            
+    
        
         <ul id="js--products" class="games">
 

@@ -1,6 +1,9 @@
 let filterKopen = document.getElementById("checkbox-kopen");
 let filterHuren = document.getElementById("checkbox-huren");
 let filter4k = document.getElementById("checkbox-4k");
+
+const shoppingModal = document.getElementById("js--shoppingModal");
+let modalIsOpen = false;
 const productPrice = document.getElementById("product--price");
 const productTitle = document.getElementById("product--title");
 const productImage = document.querySelector(".productImage");
@@ -11,6 +14,24 @@ const checkoutButton = document.getElementById("js--checkoutButton");
 checkoutButton.addEventListener("click", function() {
     window.location.href = "shoppingcart.html";
   });
+
+
+
+  let addCart = document.getElementsByClassName("productButton");
+  console.log(addCart);
+  for (let i = 0; i < addCart.length; i++) {
+      addCart[i].addEventListener("click", function () {
+        if (modalIsOpen === false) {
+          shoppingModal.style.display = "flex";
+          modalIsOpen = true;
+          setTimeout(function () {
+            shoppingModal.style.display = "none";
+            modalIsOpen = false;
+          }, 2000);
+        }
+      });
+    }
+  
 
 
 

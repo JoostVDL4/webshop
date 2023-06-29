@@ -22,6 +22,7 @@ main {
 body {
     font-family: sans-serif;
     font-size: 1.6rem;
+    width:100vw
 
 }
 
@@ -39,8 +40,8 @@ body {
     padding: 2rem;
     display: flex;
     list-style: none;
-    height: 15rem;
-    width: 100%;
+    height: 10vh;
+    width: 100vw;
     align-items: center;
     justify-content: center;
     gap: 2rem;
@@ -154,7 +155,7 @@ nav>ul {
     height: 45rem;
     width: auto;
     border-radius: 0.5rem;
-    
+    padding-left:2rem;
     
 }
 
@@ -182,6 +183,15 @@ nav>ul {
     
    
 }
+
+
+.welcomeInfo{
+    padding-top:2rem;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    color: #747070;
+    font-size: 2rem
+}
+    
 
 
 .welcomeButton{
@@ -256,7 +266,7 @@ nav>ul {
 }
 
 .tutorial {
-    margin-top:3rem;
+    margin-top: 3rem;
     height: 80vh;
     background: #F4E4DC;
     display: flex;
@@ -276,18 +286,17 @@ nav>ul {
     letter-spacing: 0.6rem;
 }
 
-
 .tutSteps {
-
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40rem;
+    grid-template-columns: 2fr 2fr;
     list-style: none;
-
-
-
+    gap: 15rem;
 }
 
+.step {
+    margin-bottom: 0.5rem; 
+    font-size: 2.4rem;
+}
 
 .productHighlight{
     margin-top:2rem;
@@ -344,8 +353,7 @@ nav>ul {
 }
 
 .review {
-
-    width: 30rem;
+    width: 25rem;
     min-height: 20rem;
     background: darkred;
     list-style: none;
@@ -423,7 +431,10 @@ nav>ul {
 
 
 .footer {
-    margin-top: 2rem;
+    padding-left:2rem;
+    padding-right:2rem;
+    padding-top: 2rem;
+    width:100vw;
     display: flex;
     justify-content: space-between;
     height: 20vh;
@@ -467,4 +478,42 @@ nav>ul {
     text-decoration: solid;
     text-decoration: none;
     color: black;
+}
+
+@media (min-width: 28.125rem) and (max-width: 48rem){
+
+    .body{
+        width:100%;
+    }
+
+    .header {
+        background: #f4e4dc;
+        list-style: none;
+        height: 5rem;
+        width: 100vw
+    
+    }
+    .headerPP1 {
+        
+    }
+    
+    .headerPP2 {
+       
+    }
+    
+    nav {
+       
+    }
+    
+    nav>ul {
+        list-style: none;
+        height: 100vw;
+        width: 100vw;
+      
+       
+    }
+}
+
+@media (min-width: 48.0625rem) {
+    
 }

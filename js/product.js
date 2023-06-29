@@ -14,7 +14,7 @@ let kopen = false;
 
 const checkoutButton = document.getElementById("js--checkoutButton");
 checkoutButton.addEventListener("click", function () {
-    window.location.href = 'shoppingcart.html';
+    window.location.href = "shoppingcart.html";
 });
 
 
