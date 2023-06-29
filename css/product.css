@@ -28,6 +28,30 @@ html {
     font-size: 62.5%;
 }
 
+.modal{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:50rem;
+    height:30rem;
+    position: fixed;
+    top:20%;
+    background: #F6F6F6;
+    box-shadow: 0 0 5rem 0 rgba(0,0,0,0.3);
+    color: #F77578;
+    font-size: 130%;
+    font-weight: 400;
+    border-radius: 0.5rem;
+    display:none;
+}
+
+.a-popup{
+    animation-name: popup;
+    animation-duration: 0.8s;
+    animation-fill-mode: backwards;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
 
 
 body {
@@ -214,3 +238,24 @@ nav>ul {
     background: black;
     padding: 1rem 2rem;
 }
+
+@media screen and (max-width: 28rem) {
+    .row {
+      flex-direction: column;
+    }
+    
+    .columnFirst {
+      flex: 70%;
+      margin: 0;
+    }
+    
+    .columnSecond {
+      flex: 100%;
+      padding-left: 0;
+    }
+    
+    .productImage {
+      width: 100%;
+      height: 80vh;
+    }
+  }

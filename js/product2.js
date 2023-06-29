@@ -3,6 +3,7 @@ let filterHuren = document.getElementById("checkbox-huren");
 let filter4k = document.getElementById("checkbox-4k");
 const productPrice = document.getElementById("product--price");
 const productTitle = document.getElementById("product--title");
+const productImage = document.querySelector(".productImage");
 let huren = false;
 let kopen = false;
 
@@ -20,9 +21,11 @@ filterKopen.addEventListener("change", function () {
         productTitle.innerText = "Scarface (buy)";
         filterHuren.checked = false;
         filter4k.checked = false;
+        productImage.src = "img/products/scarface.webp";
     } else {
         productPrice.innerText = "Please check one of the boxes to choose purchase options";
         productTitle.innerText = "Scarface";
+        productImage.src = "img/products/scarface.webp";
     }
 });
 
@@ -33,9 +36,11 @@ filterHuren.addEventListener("change", function () {
         productTitle.innerText = "Scarface (rent)";
         filterKopen.checked = false;
         filter4k.checked = false;
+        productImage.src = "img/products/scarfacealt.webp";
     } else {
         productPrice.innerText = "Please check one of the boxes to choose purchase options";
         productTitle.innerText = "Scarface";
+        productImage.src = "img/products/scarface.webp";
     }
 });
 
@@ -44,11 +49,13 @@ filter4k.addEventListener("change", function () {
     if (filter4k.checked) {
         productPrice.innerText = "€20 (4k)";
         productTitle.innerText = "Scarface (4k)";
+        productImage.src = "img/products/scarface4k.webp";
         filterKopen.checked = false;
         filterHuren.checked = false;
     } else {
         productPrice.innerText = "Please check one of the boxes to choose purchase options";
         productTitle.innerText = "Scarface";
+        productImage.src = "img/products/scarface.webp";
     }
 });
 
