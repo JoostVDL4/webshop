@@ -5,111 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShoppingCart</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:ital,wght@0,400;0,500;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/shopping.css">
-    <script src="js/shopping.js" defer></script>
-    <script src="https://kit.fontawesome.com/6f8e75a8fb.js" crossorigin="anonymous"></script>
+    <title>MovieFilter</title>
+    <script src="js/filter.js" defer></script>
+    <script src="js/products.js" defer></script>
+    <link rel="stylesheet" href="css/filter.css">
 </head>
 
-<body>
-   
-    
-    <section id="js--checkoutWindow" class="checkout a-popup">
-        <ul class="checkout__list">
-            <li class="checkout__listItem">
-                <img src="img/products/goodfellas.webp" alt="Goodfellas Film" class="checkout__image">
-                <p class="checkout__title">Goodfellas</p>
-                <p id="js--amount-buzz"class="checkout__amount"></p>
-                <p id="js--total-buzz">0</p>
-            </li>
-            <li class="checkout__listItem">
-                <img src="img/products/scarface.webp" alt="Scarface" class="checkout__image">
-                <p class="checkout__title">Scarface</p>
-                <p id="js--amount-ironman" class="checkout__amount"></p>
-                <p id="js--total-iron">0</p>
-            </li>
-            <li class="checkout__listItem">
-                <img src="img/products/heatMovie.webp" alt="heat movie" class="checkout__image">
-                <p class="checkout__title">Heat</p>
-                <p id="js--amount-c3po"class="checkout__amount"></p>
-                <p id="js--total-c3po">0</p>
-            </li>
-        </ul>
-    </section>
-    <article class="modal a-popup" id="js--shoppingModal">
-        &#10003;Added to Cart
-    </article>
-    <button id="js--checkoutButton" class="shoppingCart">
-        <i id="js--shoppingLogo" class="fa-solid fa-cart-shopping"></i>
-        <i id ="js--shoppingBack" class="fa-solid fa-arrow-left"></i>
-        <div class="shoppingCart__message">0</div>
-    </button>
 
+<body>
     
-    
+   
+
     <main>
         <section class="header">
             <header>
-    
-    
-    
                 <nav>
                     <ul>
                         <a href="index.html">
                             <img class="logo" href="index.html" src="img/logowebshop2.svg">
+                        
                         <li> <a class="headerPP1" href="productpagina1.html">ProductPagina1</a></li>
                         <li> <a class="headerPP2" href="productpagina2.html">ProductPagina2</a></li>
                     </ul>
                 </nav>
     
-              
-        
+                </div>
     
     
             </header>
+        
+      
         </section>
-        <ul class="games">
-            <li class="games__game a-popup">
-                <figure class="games__figure"><img src="img/products/goodfellas.webp" alt="Goodfellas Movie" class="games__img">
-                </figure>
-                <section class="games__body">
-                    <h2 id="js--buzz-price" class="games__h2"></h2>
-                    <h3 class="games__h3">Goodfellas</h3>
-                    <div class="games__stars">★★★★★</div>
-                    <button data-product="buzz" class="games__button">Add to Cart</button>
-                </section>
-
-            </li>
-            <li class="games__game a-popup">
-                <figure class="games__figure"><img src="img/products/scarface.webp" alt="Scarface Movie" class="games__img">
-                </figure>
-                <section class="games__body">
-                    <s>€15</s>
-                    <h2 id="js--iron-price" class="games__h2"></h2>
-                    <h3 class="games__h3">Scarface</h3>
-                    <div class="games__stars">★★★★</div>
-                    <button data-product="ironman" class="games__button">Add to Cart</button>
-                </section>
-
-            </li>
-            <li class="games__game games__game--third a-popup">
-                <figure class="games__figure"><img src="img/products/heatMovie.webp" alt="Heat Movie" class="games__img">
-                </figure>
-                <section class="games__body">
-                    <s>€10</s>
-                    <h2 id="js--c3po-price" class="games__h2"></h2>
-                    <h3 class="games__h3">Heat</h3>
-                    <div class="games__stars">★★★★</div>
-                    <button data-product="C3PO" class="games__button">Add to Cart</button>
-                </section>
-                
-            </li>
-    
+       
+        <ul id="js--products" class="games">
 
         </ul>
         <section class="footer">
@@ -129,6 +57,9 @@
 
         </section>
     </main>
+
+
+    
 </body>
 
 </html>

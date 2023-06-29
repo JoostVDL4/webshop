@@ -46,8 +46,15 @@ filterKopen.addEventListener("change", function () {
     } else {
         productPrice.innerText = "Please check one of the boxes to choose purchase options";
         productTitle.innerText = "Goodfellas";
+        productImage.src = "img/products/goodfellas.webp";
     }
 });
+
+productPrice.innerText = "€5 (buy)";
+productTitle.innerText = "Goodfellas (buy)";
+filterHuren.checked = false;
+filter4k.checked = false;
+productImage.src = "img/products/goodfellas.webp";
 
 filterHuren.addEventListener("change", function () {
 
@@ -60,6 +67,7 @@ filterHuren.addEventListener("change", function () {
     } else {
         productPrice.innerText = "Please check one of the boxes to choose purchase options";
         productTitle.innerText = "Goodfellas";
+        productImage.src = "img/products/goodfellas.webp";
     }
 });
 

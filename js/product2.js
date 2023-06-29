@@ -29,6 +29,12 @@ filterKopen.addEventListener("change", function () {
     }
 });
 
+productPrice.innerText = "€5 (buy)";
+productTitle.innerText = "Scarface (buy)";
+filterHuren.checked = false;
+filter4k.checked = false;
+productImage.src = "img/products/scarface.webp";
+
 filterHuren.addEventListener("change", function () {
 
     if (filterHuren.checked) {

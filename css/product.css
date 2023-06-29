@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+*,*::before,*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -61,7 +59,7 @@ body {
     gap: 4rem;
     font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
-    padding: 4rem;
+    
 }
 
 
@@ -214,6 +212,15 @@ nav>ul {
 }
 
 
+.boxTut{
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    color: #747070;
+    font-size: 2rem;
+}
+
+
+
+
 
 .productPrice{
     padding-top:2rem;
@@ -224,7 +231,7 @@ nav>ul {
 .productDescription{
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     color: #747070;
-    font-size: 1.4rem;
+    font-size: 2rem;
 }
 
 .productButton{
@@ -259,3 +266,53 @@ nav>ul {
       height: 80vh;
     }
   }
+
+
+
+  .footer {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+    background-color: #F4E4DC;
+    padding-top: 3rem;
+    width:100%;
+    padding:2rem;
+}
+
+.infoTitle {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    padding-bottom: 0.4rem;
+    text-decoration: underline;
+}
+
+.infoText {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    text-transform: none;
+    text-decoration: solid;
+}
+
+.shopTitle {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    padding-bottom: 0.4rem;
+    text-decoration: underline;
+}
+
+.shopText {
+    display: block;
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-transform: none;
+    text-decoration: solid;
+    text-decoration: none;
+    color: black;
+}
